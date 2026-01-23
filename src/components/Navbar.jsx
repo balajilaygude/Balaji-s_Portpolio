@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -13,7 +14,7 @@ export default function Navbar() {
         className="md:hidden bg-white px-3 py-1 rounded shadow"
         onClick={() => setOpen(!open)}
       >
-        ☰
+         {open ? <X /> : <Menu />}
       </button>
 
       {/* Menu */}
@@ -22,10 +23,10 @@ export default function Navbar() {
           open ? "flex" : "hidden"
         } md:flex flex-col md:flex-row gap-6 bg-white md:bg-transparent p-4 md:p-0 rounded shadow md:shadow-none`}
       >
-        <a href="#home" className={linkClass}>HOME</a>
-        <a href="#projects" className={linkClass}>PROJECTS</a>
-        <a href="#about" className={linkClass}>ABOUT</a>
-        <a href="#contact" className={linkClass}>CONTACT</a>
+        <a href="#home" className={linkClass} onClick={() => setOpen(false)}>HOME</a>
+        <a href="#projects" className={linkClass} onClick={() => setOpen(false)}>PROJECTS</a>
+        <a href="#about" className={linkClass} onClick={() => setOpen(false)}>ABOUT</a>
+        <a href="#contact" className={linkClass} onClick={() => setOpen(false)}>CONTACT</a>
       </ul>
     </nav>
   )
