@@ -12,7 +12,7 @@ export default function Contact() {
       <img
         src={contact}
         alt=""
-        className="sm:w-[500px] sm:h-[500px] rounded-md"
+        className="sm:w-125 sm:h-125 rounded-md"
       />
 
       <div className="bg-white p-6 rounded-xl shadow text-center flex flex-col justify-center items-center gap-5">
