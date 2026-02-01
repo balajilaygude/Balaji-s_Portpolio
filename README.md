@@ -1,5 +1,5 @@
 
-This is My Personal Portfolio website 
+This portfolio showcases some of my work, highlighting my skills in design,
 
 
 
