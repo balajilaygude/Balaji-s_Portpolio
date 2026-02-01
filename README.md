@@ -7,6 +7,4 @@ development, and problem-solving.
 
 
 
-Live demo 
-
-https://balajilaygude-portfolio.vercel.app/
+Live demo : https://balajilaygude-portfolio.vercel.app/
