@@ -31,17 +31,14 @@ export default function Projects() {
             <span className="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
               Express
             </span>
-            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-              JWT
-            </span>
             <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
               MongoDb
             </span>
           </div>
           <p className="text-sm text-gray-600 mt-2">
             Built a secure authentication system with user registration, login,
-            JWT-based authentication. Developed REST APIs using Node.js,
-            Express.js, and MongoDB frontend with
+            JWT-based authentication. Node.js,
+            Express.js, and MongoDB ,
             React.js, Tailwind CSS, and React Router
           </p>
           <div className="w-full flex justify-between items-center pt-3">
