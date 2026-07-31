@@ -17,7 +17,7 @@ export default function Projects() {
             alt=""
             className="h-full w-full object-cover rounded-md"
           />
-          <h3 className="font-semibold">IPL Dashboard </h3>
+          <h3 className="font-semibold">Auth System</h3>
           <div className="flex flex-wrap gap-2 justify-center mt-3">
             <span className="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
               React
