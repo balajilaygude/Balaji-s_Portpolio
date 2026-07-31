@@ -30,12 +30,6 @@ export default function Hero() {
             ✉️ balajiwork05@gmail.com
           </a>
 
-          <a
-            href="tel:+918080049103"
-            className="text-lg block hover:text-purple-600"
-          >
-            📞 +91 80800 49103
-          </a>
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
             <a
               href="#projects"
