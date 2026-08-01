@@ -26,13 +26,7 @@ export default function Contact() {
           <Mail />
           <span>balajiwork05@gmail.com</span>
         </a>
-        <a
-          href="tel:+918080049103"
-          className="flex items-center gap-5 hover:text-blue-600"
-        >
-          <Phone />
-          <span>+91 80800 49103</span>
-        </a>
+
         <div className="flex justify-center items-center gap-5">
           <MapPin />
           <p> Pune, Maharashtra</p>
