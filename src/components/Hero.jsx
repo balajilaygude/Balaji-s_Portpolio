@@ -7,7 +7,7 @@ export default function Hero() {
       className="min-h-screen relative overflow-hidden flex items-center"
     >
       {/* Background */}
-      <div className="absolute -right-52 md:-top-40 top-0 w-125 h-125 sm:w-225 sm:h-225 bg-[#A691E4]/80 blur-3xl rounded-full" />
+      <div className="absolute -right-52 md:-top-40 top-0 w-125 h-125 sm:w-225 sm:h-225 bg-[#ac8787]/80 blur-3xl rounded-full" />
 
       <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between w-full px-6 md:px-20 gap-10">
         {/* Text */}
