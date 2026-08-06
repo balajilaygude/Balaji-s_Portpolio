@@ -51,7 +51,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="bg-[#A691E4]/90 p-8 rounded-xl text-white shadow-lg">
+      <div className="bg-amber-800/40 p-8 rounded-xl text-white shadow-lg">
         <h3 className="text-3xl font-bold mb-4 sm:m-7">My Skills</h3>
         {skills.map((skill) => (
           <div key={skill.name} className="mb-4">

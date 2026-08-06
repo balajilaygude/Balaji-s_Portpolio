@@ -11,7 +11,7 @@ export default function Projects() {
       <h2 className="text-3xl font-bold mb-10">Projects</h2>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-8">
-        <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-fuchsia-700">
+        <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-amber-800">
           <img
             src={auth}
             alt=""
@@ -62,7 +62,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-fuchsia-700">
+        <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-amber-800">
           <img
             src={ipl}
             alt=""
@@ -106,7 +106,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-fuchsia-700">
+        <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-amber-800">
           <img
             src={dice}
             alt=""
