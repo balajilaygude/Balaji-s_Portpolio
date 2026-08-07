@@ -1,4 +1,7 @@
 import profile from "../assets/balaji.png";
+import { FaGithub } from "react-icons/fa";
+
+
 
 export default function Hero() {
   return (
@@ -21,33 +24,32 @@ export default function Hero() {
           </h1>
 
           <p className="mb-6 text-xl text-purple-600 font-semibold">
-            Web Developer
+            Fullstack Developer
           </p>
-          <a
-            href="mailto:balajiwork05@gmail.com"
-            className="text-lg block hover:text-purple-600"
-          >
-            ✉️ balajiwork05@gmail.com
-          </a>
+
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
-            <a
-              href="#projects"
+            <a href="/resume.pdf" download="Balaji_Laygude_Resume.pdf"
               className="bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700 transition focus:outline-none focus:ring-2 focus:ring-purple-500
 "
             >
-              View Projects
+              Download Resume
             </a>
 
             <a
               href="#contact"
-              className="border-2 border-purple-600 text-purple-600 px-6 py-3 rounded-xl hover:bg-purple-50 transition focus:outline-none focus:ring-2 focus:ring-purple-500
+              className="border-2 bg- border-purple-600 text-purple-600 px-6 py-3 rounded-xl hover:bg-purple-50 transition focus:outline-none focus:ring-2 focus:ring-purple-500
 "
             >
               Contact Me
             </a>
+                    </div>
+                  <div>
+            <FaGithub />
+            
           </div>
-        </div>
+          </div>
+
 
         {/* Image */}
         <div className="md:w-1/2 flex items-center">
