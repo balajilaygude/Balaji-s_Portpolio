@@ -11,7 +11,7 @@ export default function Projects() {
     <section id="projects" className="min-h-[calc(100vh-100px)] px-6 md:px-20 py-16">
       <h2 className="text-3xl font-bold mb-10">Projects</h2>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3  gap-8">
         <div className="bg-white p-6 rounded-xl text-center flex flex-col  items-center justify-center hover:scale-105 shadow-lg hover:shadow-2xl transition-transform duration-300 shadow-amber-800">
           <img
             src={auth}
