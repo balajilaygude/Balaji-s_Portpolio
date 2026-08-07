@@ -26,9 +26,6 @@ export default function Projects() {
             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
               Node
             </span>
-            <span className="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
-              Express
-            </span>
             <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
               MongoDb
             </span>

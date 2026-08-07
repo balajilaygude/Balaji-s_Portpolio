@@ -14,11 +14,11 @@ export default function Hero() {
             HELLO, MY NAME IS
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold my-4">
+          <h1 className="text-4xl md:text-6xl font-bold sm:my-4 my-2">
             Balaji Laygude
           </h1>
 
-          <p className="mb-6 text-xl text-gray-600 font-semibold">
+          <p className="sm:mb-6 mb-2 text-xl text-gray-600 font-semibold">
             Fullstack Developer
           </p>
 
