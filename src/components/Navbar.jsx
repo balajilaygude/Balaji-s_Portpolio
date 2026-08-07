@@ -5,7 +5,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const linkClass =
-    "cursor-pointer hover:text-purple-600 transition"
+    "cursor-pointer hover:text-gray-400 transition"
 
   return (
     <nav className="fixed top-4 right-4 md:right-40 md:top-10 z-50">
