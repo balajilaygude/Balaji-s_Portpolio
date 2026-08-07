@@ -1,15 +1,12 @@
 import profile from "../assets/balaji.png";
-import { FaGithub } from "react-icons/fa";
-
-
+import { FaGithub,FaLinkedin  } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen relative overflow-hidden flex items-center"
+      className="mt-10 sm:h-screen sm:mt-0 relative overflow-hidden flex items-center"
     >
-
       <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between w-full px-6 md:px-20 gap-10">
         {/* Text */}
         <div className="text-center md:text-left md:w-1/2">
@@ -21,14 +18,15 @@ export default function Hero() {
             Balaji Laygude
           </h1>
 
-          <p className="mb-6 text-xl text-purple-600 font-semibold">
+          <p className="mb-6 text-xl text-gray-600 font-semibold">
             Fullstack Developer
           </p>
 
-
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
-            <a href="/resume.pdf" download="Balaji_Laygude_Resume.pdf"
-              className="bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700 transition focus:outline-none focus:ring-2 focus:ring-purple-500
+            <a
+              href="/resume.pdf"
+              download="Balaji_Laygude_Resume.pdf"
+              className="bg-black text-white px-6 py-3 rounded-4xl hover:bg-white hover:text-black transition focus:outline-none focus:ring-2 focus:ring-black hover:border border-black
 "
             >
               Download Resume
@@ -36,18 +34,21 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="border-2 bg- border-purple-600 text-purple-600 px-6 py-3 rounded-xl hover:bg-purple-50 transition focus:outline-none focus:ring-2 focus:ring-purple-500
+              className="border-2 bg- border-black text-black px-6 py-3 rounded-4xl hover:bg-black hover:text-white transition focus:outline-none focus:ring-2 focus:ring-black
 "
             >
               Contact Me
             </a>
-                    </div>
-                  <div>
-            <FaGithub />
-            
           </div>
+          <div className="flex justify-center sm:justify-start my-5 gap-3">
+            <a href="https://github.com/balajilaygude" target="_blank">
+            <FaGithub  className="w-8 h-8 "/>
+            </a>
+            <a href="https://www.linkedin.com/in/balajilaygude" target="_blank">
+            <FaLinkedin className="w-8 h-8 " />
+            </a>
           </div>
-
+        </div>
 
         {/* Image */}
         <div className="md:w-1/2 flex items-center">
