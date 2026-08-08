@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="mt-10 h-screen sm:mt-0 relative overflow-hidden flex items-center"
+      className="h-full relative overflow-hidden flex items-center"
     >
       <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between w-full px-6 md:px-20 gap-10">
         {/* Text */}
