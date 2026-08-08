@@ -21,7 +21,7 @@ export default function About() {
           <img
             src="/pic.png"
             alt=""
-            className="lg:w-3/6 w-full rounded-xl shadow-xl shadow-gray-600"
+            className="lg:w-3/6 w-full rounded-xl "
           />
 
           <div className="grid grid-rows-2 w-full lg:w-3/6 p-2 gap-5">
