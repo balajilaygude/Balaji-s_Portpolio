@@ -1,4 +1,4 @@
-import contact from "../assets/20943705.jpg";
+// import contact from "../assets/20943705.jpg";
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
 import { MapPin } from "lucide-react";
@@ -10,7 +10,7 @@ export default function Contact() {
       className="px-6 md:px-20 py-16 grid md:grid-cols-2 gap-10"
     >
       <img
-        src={contact}
+        // src={contact}
         alt=""
         className="sm:w-125 sm:h-125 rounded-md"
       />

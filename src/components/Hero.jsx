@@ -40,7 +40,7 @@ export default function Hero() {
               Contact Me
             </a>
           </div>
-          <div className="flex justify-center sm:justify-start my-5 gap-3">
+          <div className="flex justify-center md:justify-start my-5 gap-3">
             <a href="https://github.com/balajilaygude" target="_blank">
             <FaGithub  className="w-8 h-8 "/>
             </a>
