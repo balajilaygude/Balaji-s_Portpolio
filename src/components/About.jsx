@@ -45,8 +45,8 @@ export default function About() {
               <h3 className="font-semibold">Bsc in Computer Science</h3>
               <p>CGPA :8.0</p>
             </div>
-            <p className="border rounded-2xl p-2 text-center shadow-lg shadow-gray-600">
-              Hi, I’m Balaji Laygude, a Computer Science graduate and aspiring Full Stack MERN Developer from Pune. I enjoy building real-world web applications and turning ideas into functional, responsive products. My core stack includes React.js, JavaScript, Node.js, Express.js, MongoDB, and Tailwind CSS. working across both frontend and backend development. <span className="font-semibold">I’m also exploring Docker, CI/CD, cloud deployment, and TypeScript to strengthen my development skills.</span> Right now, I’m focused on starting my professional career as a Full Stack Developer.
+            <p className="border rounded-2xl p-5 text-center shadow-lg shadow-gray-600">
+              Hi, I’m Balaji Laygude, a Computer Science graduate and aspiring Full Stack MERN Developer from Pune. My core stack includes <span className="font-semibold"> React.js, JavaScript, Node.js, Express.js, MongoDB, and Tailwind CSS.</span> working across both frontend and backend development. <span className="font-semibold">I’m also exploring Docker, CI/CD, cloud deployment, and TypeScript to strengthen my development skills.</span>
             </p>
           </div>
         </div>
