@@ -21,7 +21,13 @@ export default function About() {
           <img
             src="/pic.png"
             alt=""
-            className="lg:w-3/6 w-full rounded-xl "
+            className="lg:w-3/6  w-full
+            object-cover
+    rounded-xl
+    md:grayscale
+    md:hover:grayscale-0
+    transition-all
+    duration-500"
           />
 
           <div className="grid grid-rows-2 w-full lg:w-3/6 p-2 gap-5">
