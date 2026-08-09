@@ -1,19 +1,43 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Projects from "./components/Projects"
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="bg-white text-black">
+    <div
+      className="
+        min-h-screen
+        overflow-x-hidden
+        bg-white
+        text-gray-900
+        antialiased
+        selection:bg-violet-500
+        selection:text-white
+        scroll-smooth
+      "
+    >
+      {/* Navbar */}
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+
+      {/* Main Portfolio */}
+      <main>
+        <Hero />
+
+        <About />
+
+        <Skills />
+
+        <Projects />
+
+        <Contact />
+      </main>
+
+      {/* Footer */}
       <Footer />
     </div>
-  )
+  );
 }
