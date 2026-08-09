@@ -1,74 +1,677 @@
-import { PiMedal } from "react-icons/pi";
-import { FaUserGraduate } from "react-icons/fa";
+import {
+  FaUserGraduate,
+  FaCode,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+
+import {
+  ArrowUpRight,
+  GraduationCap,
+} from "lucide-react";
 
 export default function About() {
-  const skills = [
-    { name: "HTML", level: 95 },
-    { name: "CSS", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "Tailwind", level: 85 },
-    { name: "React", level: 85 },
-    { name: "Figma", level: 90 },
-    { name: "Git & GitHub", level: 80 },
-  ];
-
   return (
-    <section id="about" className="px-6 md:px-20 py-16 gap-10">
-      <div>
-        <p className="text-gray-400 text-center">Get To know More</p>
-        <h2 className="text-4xl text-center font-bold mb-8">About Me</h2>
-        <div className="flex flex-col w-full lg:flex-row gap-5">
-          <img
-            src="/pic.png"
-            alt=""
-            className="lg:w-3/6  w-full
-            object-cover
-    rounded-xl
-    md:grayscale
-    md:hover:grayscale-0
-    transition-all
-    duration-500"
-          />
+    <section
+      id="about"
+      className="
+        relative
+        overflow-hidden
+        px-6
+        md:px-12
+        lg:px-20
+        py-24
+        bg-white
+      "
+    >
 
-          <div className="grid grid-rows-2 w-full lg:w-3/6 p-2 gap-5">
-            {/* <div className=" flex flex-col gap-2 items-center justify-center rounded-2xl border">
-              <PiMedal className="text-3xl" />
-              <h2 className="text-xl font-semibold">Experience</h2>
-              <p className="text-lg">Camtech Solutions Pvt. Ltd.</p>
-              <h3 className="font-semibold">Frontend Developer</h3>
-              <p>Jan 2026 – May 2026</p>
-            </div> */}
-            <div className=" flex flex-col gap-2 items-center justify-center rounded-2xl border p-2 shadow-lg shadow-gray-600">
-              <FaUserGraduate className="text-3xl" />
-              <h2 className="text-xl font-semibold">Education</h2>
-              <p className="text-lg">Modern Collage Shivajinagar Pune 05</p>
-              <h3 className="font-semibold">Bsc in Computer Science</h3>
-              <p>CGPA :8.0</p>
-            </div>
-            <p className="border rounded-2xl p-5 text-center shadow-lg shadow-gray-600">
-              Hi, I’m Balaji Laygude, a Computer Science graduate and aspiring Full Stack MERN Developer from Pune. My core stack includes <span className="font-semibold"> React.js, JavaScript, Node.js, Express.js, MongoDB, and Tailwind CSS.</span> working across both frontend and backend development. <span className="font-semibold">I’m also exploring Docker, CI/CD, cloud deployment, and TypeScript to strengthen my development skills.</span>
+      {/* =====================================================
+          BACKGROUND
+      ====================================================== */}
+
+      <div
+        className="
+          absolute
+          -top-40
+          right-0
+          w-96
+          h-96
+          rounded-full
+          bg-violet-200/30
+          blur-3xl
+          pointer-events-none
+        "
+      />
+
+      <div
+        className="
+          absolute
+          -bottom-40
+          left-0
+          w-96
+          h-96
+          rounded-full
+          bg-cyan-200/20
+          blur-3xl
+          pointer-events-none
+        "
+      />
+
+
+      {/* =====================================================
+          CONTENT
+      ====================================================== */}
+
+      <div
+        className="
+          relative
+          z-10
+          max-w-7xl
+          mx-auto
+        "
+      >
+
+        {/* =================================================
+            SECTION HEADER
+        ================================================== */}
+
+        <div className="mb-14">
+
+          <p
+            className="
+              text-sm
+              font-mono
+              tracking-[0.25em]
+              uppercase
+              text-violet-600
+            "
+          >
+            Get to know me
+          </p>
+
+          <div
+            className="
+              mt-3
+              flex
+              flex-col
+              md:flex-row
+              md:items-end
+              md:justify-between
+              gap-5
+            "
+          >
+
+            <h2
+              className="
+                text-4xl
+                sm:text-5xl
+                lg:text-6xl
+                font-black
+                tracking-tight
+              "
+            >
+              About{" "}
+              <span
+                className="
+                  bg-gradient-to-r
+                  from-violet-600
+                  to-cyan-500
+                  bg-clip-text
+                  text-transparent
+                "
+              >
+                Me
+              </span>
+            </h2>
+
+            <p
+              className="
+                max-w-md
+                text-gray-500
+                text-sm
+                leading-relaxed
+              "
+            >
+              A developer who enjoys turning ideas into
+              useful, responsive and well-designed web
+              experiences.
             </p>
+
           </div>
+
         </div>
+
+
+        {/* =================================================
+            MAIN GRID
+        ================================================== */}
+
+        <div
+          className="
+            grid
+            lg:grid-cols-5
+            gap-6
+          "
+        >
+
+
+          {/* =================================================
+              EDUCATION CARD
+          ================================================== */}
+
+          <div
+            className="
+              lg:col-span-2
+
+              group
+
+              relative
+              overflow-hidden
+
+              rounded-3xl
+
+              border
+              border-violet-100
+
+              bg-gradient-to-br
+              from-violet-50
+              via-white
+              to-cyan-50
+
+              p-7
+
+              shadow-xl
+              shadow-violet-100/40
+
+              hover:-translate-y-2
+
+              transition-all
+              duration-500
+            "
+          >
+
+            {/* Decorative circle */}
+
+            <div
+              className="
+                absolute
+                -top-16
+                -right-16
+                w-40
+                h-40
+                rounded-full
+                bg-violet-200/40
+                group-hover:scale-125
+                transition-transform
+                duration-700
+              "
+            />
+
+
+            {/* Icon */}
+
+            <div
+              className="
+                relative
+
+                w-14
+                h-14
+
+                rounded-2xl
+
+                bg-gradient-to-br
+                from-violet-600
+                to-purple-500
+
+                text-white
+
+                flex
+                items-center
+                justify-center
+
+                shadow-lg
+                shadow-violet-500/20
+              "
+            >
+
+              <FaUserGraduate size={24} />
+
+            </div>
+
+
+            {/* Label */}
+
+            <p
+              className="
+                relative
+
+                mt-8
+
+                text-xs
+
+                font-mono
+
+                tracking-[0.2em]
+
+                uppercase
+
+                text-violet-600
+              "
+            >
+              Education
+            </p>
+
+
+            {/* Degree */}
+
+            <h3
+              className="
+                relative
+
+                mt-2
+
+                text-2xl
+
+                font-bold
+
+                text-gray-900
+              "
+            >
+              B.Sc. Computer Science
+            </h3>
+
+
+            {/* College */}
+
+            <p
+              className="
+                relative
+
+                mt-3
+
+                text-gray-600
+
+                leading-relaxed
+              "
+            >
+              Modern College of Arts, Science and
+              Commerce, Shivajinagar, Pune
+            </p>
+
+
+            {/* Bottom Information */}
+
+            <div
+              className="
+                relative
+
+                mt-8
+
+                pt-6
+
+                border-t
+                border-violet-100
+
+                flex
+                flex-wrap
+                gap-3
+              "
+            >
+
+              {/* CGPA */}
+
+              <div
+                className="
+                  px-4
+                  py-2
+
+                  rounded-xl
+
+                  bg-white
+
+                  border
+                  border-gray-100
+
+                  shadow-sm
+                "
+              >
+
+                <p className="text-[10px] text-gray-400 uppercase">
+                  CGPA
+                </p>
+
+                <p className="font-bold text-gray-900">
+                  8.0
+                </p>
+
+              </div>
+
+
+              {/* Duration */}
+
+              <div
+                className="
+                  px-4
+                  py-2
+
+                  rounded-xl
+
+                  bg-white
+
+                  border
+                  border-gray-100
+
+                  shadow-sm
+                "
+              >
+
+                <p className="text-[10px] text-gray-400 uppercase">
+                  Duration
+                </p>
+
+                <p className="font-bold text-gray-900">
+                  2023 — 2026
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* =================================================
+              ABOUT CONTENT
+          ================================================== */}
+
+          <div
+            className="
+              lg:col-span-3
+
+              rounded-3xl
+
+              border
+              border-gray-100
+
+              bg-white
+
+              p-7
+              md:p-9
+
+              shadow-xl
+              shadow-gray-200/50
+            "
+          >
+
+            {/* Header */}
+
+            <div
+              className="
+                flex
+                items-center
+                justify-between
+                gap-4
+              "
+            >
+
+              <div
+                className="
+                  flex
+                  items-center
+                  gap-3
+                "
+              >
+
+                <div
+                  className="
+                    w-11
+                    h-11
+
+                    rounded-xl
+
+                    bg-cyan-50
+
+                    text-cyan-600
+
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <FaCode size={18} />
+                </div>
+
+                <div>
+
+                  <p className="text-xs text-gray-400 uppercase tracking-wider">
+                    Who I am
+                  </p>
+
+                  <h3 className="font-bold text-lg">
+                    Building with purpose
+                  </h3>
+
+                </div>
+
+              </div>
+
+
+              <ArrowUpRight
+                className="
+                  text-gray-300
+                "
+                size={22}
+              />
+
+            </div>
+
+
+            {/* Description */}
+
+            <div
+              className="
+                mt-8
+
+                space-y-5
+
+                text-gray-600
+
+                leading-8
+
+                text-sm
+                md:text-base
+              "
+            >
+
+              <p>
+                Hi, I'm{" "}
+                <span className="font-semibold text-gray-900">
+                  Balaji Laygude
+                </span>
+                , a Computer Science graduate and Full
+                Stack MERN Developer from Pune. I enjoy
+                building web applications that are not
+                only functional, but also clean,
+                responsive and enjoyable to use.
+              </p>
+
+              <p>
+                My core stack includes{" "}
+                <span className="font-semibold text-gray-900">
+                  React.js, JavaScript, Node.js,
+                  Express.js, MongoDB and Tailwind CSS
+                </span>
+                . I enjoy working across both frontend
+                and backend development and understanding
+                how the complete application fits together.
+              </p>
+
+              <p>
+                I'm continuously expanding my toolkit by
+                exploring{" "}
+                <span className="font-semibold text-violet-600">
+                  Docker, CI/CD, cloud deployment and
+                  TypeScript
+                </span>
+                , while focusing on writing better code
+                and building real-world projects.
+              </p>
+
+            </div>
+
+
+            {/* =================================================
+                QUICK STATS
+            ================================================== */}
+
+            <div
+              className="
+                mt-8
+
+                grid
+                grid-cols-2
+                sm:grid-cols-4
+
+                gap-3
+              "
+            >
+
+              {/* Stat 1 */}
+
+              <div
+                className="
+                  rounded-2xl
+                  bg-violet-50
+                  p-4
+                  hover:bg-violet-100
+                  transition
+                "
+              >
+
+                <p
+                  className="
+                    text-2xl
+                    font-black
+                    text-violet-600
+                  "
+                >
+                  BSc
+                </p>
+
+                <p className="text-xs text-gray-500 mt-1">
+                  Computer Science
+                </p>
+
+              </div>
+
+
+              {/* Stat 2 */}
+
+              <div
+                className="
+                  rounded-2xl
+                  bg-cyan-50
+                  p-4
+                  hover:bg-cyan-100
+                  transition
+                "
+              >
+
+                <p
+                  className="
+                    text-2xl
+                    font-black
+                    text-cyan-600
+                  "
+                >
+                  8.0
+                </p>
+
+                <p className="text-xs text-gray-500 mt-1">
+                  CGPA
+                </p>
+
+              </div>
+
+
+              {/* Stat 3 */}
+
+              <div
+                className="
+                  rounded-2xl
+                  bg-green-50
+                  p-4
+                  hover:bg-green-100
+                  transition
+                "
+              >
+
+                <p
+                  className="
+                    text-2xl
+                    font-black
+                    text-green-600
+                  "
+                >
+                  MERN
+                </p>
+
+                <p className="text-xs text-gray-500 mt-1">
+                  Full Stack
+                </p>
+
+              </div>
+
+
+              {/* Stat 4 */}
+
+              <div
+                className="
+                  rounded-2xl
+                  bg-orange-50
+                  p-4
+                  hover:bg-orange-100
+                  transition
+                "
+              >
+
+                <div
+                  className="
+                    flex
+                    items-center
+                    gap-2
+                  "
+                >
+
+                  <FaMapMarkerAlt
+                    className="text-orange-500"
+                  />
+
+                  <p
+                    className="
+                      text-lg
+                      font-black
+                      text-orange-600
+                    "
+                  >
+                    Pune
+                  </p>
+
+                </div>
+
+                <p className="text-xs text-gray-500 mt-1">
+                  India
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      {/* <div className="bg-amber-800/40 p-8 rounded-xl text-white shadow-lg">
-        <h3 className="text-3xl font-bold mb-4 sm:m-7">My Skills</h3>
-        {skills.map((skill) => (
-          <div key={skill.name} className="mb-4">
-            <div className="flex justify-between text-md mb-1">
-              <span>{skill.name}</span>
-              <span>{skill.level}%</span>
-            </div>
-            <div className="bg-white/30 h-2 rounded">
-              <div
-                className="bg-[#3F51B5] h-2 rounded transition-all duration-700"
-                style={{ width: `${skill.level}%` }}
-              />
-            </div>
-          </div>
-        ))}
-      </div> */}
     </section>
   );
 }
