@@ -402,7 +402,7 @@ export default function Projects() {
             flex
             items-center
             gap-4
-            mt-16
+            mt-24
           "
         >
           <div
