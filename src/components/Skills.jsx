@@ -168,7 +168,8 @@ return (
       px-6
       md:px-12
       lg:px-20
-      py-24
+      md:py-24
+      py-12
       bg-[#07070a]
       text-white
     "
@@ -184,8 +185,8 @@ return (
         top-0
         left-1/2
         -translate-x-1/2
-        w-[500px]
-        h-[500px]
+        w-125
+        h-125
         rounded-full
         bg-purple-600/10
         blur-[140px]
@@ -198,8 +199,8 @@ return (
         absolute
         bottom-0
         left-0
-        w-[350px]
-        h-[350px]
+        w-87.5
+        h-87.5
         rounded-full
         bg-cyan-500/10
         blur-[130px]
@@ -212,8 +213,8 @@ return (
         absolute
         top-1/2
         right-0
-        w-[300px]
-        h-[300px]
+        w-75
+        h-75
         rounded-full
         bg-pink-500/5
         blur-[120px]
@@ -231,22 +232,13 @@ return (
         opacity-[0.025]
         pointer-events-none
         bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)]
-        bg-[size:50px_50px]
+        bg-size-[50px_50px]
       "
     />
-
-
-    {/* =====================================================
-        MAIN CONTAINER
-    ====================================================== */}
+        {/* MAIN CONTAINER */}
 
     <div className="relative z-10 max-w-7xl mx-auto">
-
-
-      {/* =================================================
-          HEADER
-      ================================================== */}
-
+          {/* HEADER */}
       <div className="text-center mb-16">
 
         <div
@@ -259,7 +251,7 @@ return (
             rounded-full
             border
             border-white/10
-            bg-white/[0.04]
+            bg-white/4
             backdrop-blur-md
             mb-6
           "
@@ -286,7 +278,7 @@ return (
               text-gray-400
             "
           >
-            04 / Skills
+           Skills
           </span>
 
         </div>
@@ -306,7 +298,7 @@ return (
 
           <span
             className="
-              bg-gradient-to-r
+              bg-linear-to-r
               from-cyan-400
               via-purple-400
               to-pink-400
@@ -337,18 +329,14 @@ return (
 
       </div>
 
-
-      {/* =================================================
-          MERN FEATURED STACK
-      ================================================== */}
-
+          {/* MERN FEATURED STACK */}
       <div
         className="
           relative
           max-w-5xl
           mx-auto
           mb-16
-          rounded-[2rem]
+          rounded-4xl
           border
           border-white/10
           bg-white/[0.035]
@@ -367,8 +355,8 @@ return (
             top-0
             left-0
             right-0
-            h-[2px]
-            bg-gradient-to-r
+            h-0.5
+            bg-linear-to-r
             from-cyan-400
             via-purple-500
             to-green-400
@@ -508,10 +496,10 @@ return (
                 rounded-2xl
                 border
                 border-cyan-400/10
-                bg-cyan-400/[0.04]
+                bg-cyan-400/4
                 p-5
                 overflow-hidden
-                hover:bg-cyan-400/[0.08]
+                hover:bg-cyan-400/8
                 hover:border-cyan-400/30
                 hover:-translate-y-1
                 transition-all
@@ -565,10 +553,10 @@ return (
                 rounded-2xl
                 border
                 border-green-400/10
-                bg-green-400/[0.04]
+                bg-green-400/4
                 p-5
                 overflow-hidden
-                hover:bg-green-400/[0.08]
+                hover:bg-green-400/8
                 hover:border-green-400/30
                 hover:-translate-y-1
                 transition-all
@@ -607,7 +595,7 @@ return (
                 rounded-2xl
                 border
                 border-white/10
-                bg-white/[0.03]
+                bg-white/3
                 p-5
                 overflow-hidden
                 hover:bg-white/[0.07]
@@ -648,10 +636,10 @@ return (
                 rounded-2xl
                 border
                 border-green-400/10
-                bg-green-400/[0.04]
+                bg-green-400/4
                 p-5
                 overflow-hidden
-                hover:bg-green-400/[0.08]
+                hover:bg-green-400/8
                 hover:border-green-400/30
                 hover:-translate-y-1
                 transition-all
@@ -686,10 +674,7 @@ return (
 
       </div>
 
-
-      {/* =================================================
-          OTHER SKILLS HEADER
-      ================================================== */}
+          {/* OTHER SKILLS HEADER */}
 
       <div
         className="
@@ -738,9 +723,7 @@ return (
       </div>
 
 
-      {/* =================================================
-          SKILLS GRID
-      ================================================== */}
+          {/* SKILLS GRID */}
 
       <div
         className="
@@ -761,28 +744,18 @@ return (
               group
               relative
               overflow-hidden
-
               rounded-2xl
-
               border
               ${skill.border}
-
               ${skill.bg}
-
               p-5
-
-              min-h-[155px]
-
+              min-h-38.75
               flex
               flex-col
               justify-between
-
               hover:-translate-y-2
-
               hover:shadow-xl
-
               ${skill.glow}
-
               transition-all
               duration-300
             `}
@@ -840,12 +813,9 @@ return (
               className={`
                 text-4xl
                 ${skill.color}
-
                 group-hover:scale-110
                 group-hover:-rotate-3
-
                 origin-left
-
                 transition-all
                 duration-300
               `}
@@ -890,17 +860,12 @@ return (
                 duration-500
               "
             />
-
           </div>
 
         ))}
 
       </div>
-
-
-      {/* =================================================
-          BOTTOM
-      ================================================== */}
+          {/* BOTTOM */}
 
       <div
         className="

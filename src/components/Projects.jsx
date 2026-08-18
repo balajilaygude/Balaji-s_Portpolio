@@ -17,47 +17,10 @@ export default function Projects() {
         py-24
         bg-white
       "
-    >
-      {/* =====================================================
-          BACKGROUND GLOW
-      ====================================================== */}
-
-      <div
-        className="
-          absolute
-          top-20
-          right-0
-          w-[350px]
-          h-[350px]
-          rounded-full
-          bg-violet-200/30
-          blur-[120px]
-          pointer-events-none
-        "
-      />
-
-      <div
-        className="
-          absolute
-          bottom-0
-          left-0
-          w-[300px]
-          h-[300px]
-          rounded-full
-          bg-cyan-200/20
-          blur-[120px]
-          pointer-events-none
-        "
-      />
-
-      {/* =====================================================
-          MAIN CONTAINER
-      ====================================================== */}
+    > 
+          {/* MAIN CONTAINER */}
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        {/* =================================================
-            HEADER
-        ================================================== */}
 
         <div
           className="
@@ -88,7 +51,6 @@ export default function Projects() {
                   animate-pulse
                 "
               />
-
               <p
                 className="
                   text-xs
@@ -98,7 +60,7 @@ export default function Projects() {
                   text-violet-600
                 "
               >
-                03 / Projects
+               Projects
               </p>
             </div>
 
@@ -114,7 +76,7 @@ export default function Projects() {
               Things I've{" "}
               <span
                 className="
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-violet-600
                   via-purple-500
                   to-cyan-500
@@ -142,9 +104,7 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* =================================================
-            PROJECT GRID
-        ================================================== */}
+            {/* PROJECT GRID */}
 
         <div
           className="
@@ -161,40 +121,29 @@ export default function Projects() {
               className="
                 group
                 relative
-
                 flex
                 flex-col
-
                 overflow-hidden
-
                 rounded-3xl
-
                 border
                 border-gray-200
-
                 bg-white
-
                 shadow-lg
                 shadow-gray-200/50
-
                 hover:-translate-y-2
                 hover:shadow-2xl
                 hover:shadow-violet-200/40
-
                 transition-all
                 duration-500
               "
             >
-              {/* =================================================
-                  IMAGE
-              ================================================== */}
-
+                  {/* IMAGE */}
               <div
                 className="
                   relative
                   overflow-hidden
                   bg-gray-100
-                  aspect-[16/10]
+                  aspect-16/10
                 "
               >
                 <img
@@ -204,9 +153,7 @@ export default function Projects() {
                       w-full
   h-full
   object-cover
-
   group-hover:scale-105
-
   transition-transform
   duration-700
                   "
@@ -218,15 +165,12 @@ export default function Projects() {
                   className="
                     absolute
                     inset-0
-
-                    bg-gradient-to-t
+                    bg-linear-to-t
                     from-black/60
                     via-black/10
                     to-transparent
-
                     opacity-40
                     md:group-hover:opacity-70
-
                     transition-opacity
                     duration-500
                   "
@@ -239,20 +183,15 @@ export default function Projects() {
                     absolute
                     top-4
                     left-4
-
                     px-3
                     py-1.5
-
                     rounded-full
-
                     bg-black/70
                     backdrop-blur-md
-
                     text-white
                     text-[10px]
                     font-mono
                     tracking-widest
-
                     border
                     border-white/10
                   "
@@ -267,26 +206,18 @@ export default function Projects() {
                     absolute
                     top-4
                     right-4
-
                     w-10
                     h-10
-
                     rounded-full
-
                     bg-white/90
-
                     flex
                     items-center
                     justify-center
-
                     text-gray-900
-
                     opacity-0
                     translate-y-2
-
                     md:group-hover:opacity-100
                     md:group-hover:translate-y-0
-
                     transition-all
                     duration-300
                   "
@@ -295,16 +226,12 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* =================================================
-                  CONTENT
-              ================================================== */}
-
+                  {/* CONTENT */}
               <div
                 className="
                   flex
                   flex-col
                   flex-1
-
                   p-5
                   md:p-6
                 "
@@ -317,11 +244,8 @@ export default function Projects() {
                     md:text-xl
                     font-bold
                     leading-snug
-
                     text-gray-900
-
                     group-hover:text-violet-600
-
                     transition-colors
                     duration-300
                   "
@@ -335,26 +259,19 @@ export default function Projects() {
                   className="
                     w-10
                     h-1
-
                     rounded-full
-
-                    bg-gradient-to-r
+                    bg-linear-to-r
                     from-violet-500
                     to-cyan-400
-
                     mt-3
                     mb-4
-
                     group-hover:w-16
-
                     transition-all
                     duration-300
                   "
                 />
 
-                {/* =================================================
-                    TECH STACK
-                ================================================== */}
+                    {/* TECH STACK */}
 
                 <div
                   className="
@@ -370,22 +287,16 @@ export default function Projects() {
                         text-[10px]
                         md:text-xs
                         font-medium
-
                         px-3
                         py-1.5
-
                         rounded-full
-
                         bg-gray-50
                         text-gray-600
-
                         border
                         border-gray-200
-
                         hover:bg-violet-50
                         hover:text-violet-700
                         hover:border-violet-200
-
                         transition-all
                         duration-200
                       "
@@ -394,11 +305,7 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-
-                {/* =================================================
-                    LINKS
-                ================================================== */}
-
+                    {/* LINKS */}
                 {(project.liveLink || project.githubLink) && (
                   <div
                     className="
@@ -418,27 +325,19 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="
                           flex-1
-
                           flex
                           items-center
                           justify-center
                           gap-2
-
                           px-4
                           py-2.5
-
                           rounded-xl
-
                           bg-gray-900
                           text-white
-
                           text-sm
                           font-medium
-
                           hover:bg-violet-600
-
                           hover:-translate-y-0.5
-
                           transition-all
                           duration-300
                         "
@@ -497,10 +396,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* =================================================
-            BOTTOM
-        ================================================== */}
-
+            {/* BOTTOM */}
         <div
           className="
             flex

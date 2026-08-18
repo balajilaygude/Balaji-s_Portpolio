@@ -24,38 +24,6 @@ export default function About() {
       "
     >
 
-      {/* =====================================================
-          BACKGROUND
-      ====================================================== */}
-
-      <div
-        className="
-          absolute
-          -top-40
-          right-0
-          w-96
-          h-96
-          rounded-full
-          bg-violet-200/30
-          blur-3xl
-          pointer-events-none
-        "
-      />
-
-      <div
-        className="
-          absolute
-          -bottom-40
-          left-0
-          w-96
-          h-96
-          rounded-full
-          bg-cyan-200/20
-          blur-3xl
-          pointer-events-none
-        "
-      />
-
 
       {/* =====================================================
           CONTENT
@@ -68,11 +36,8 @@ export default function About() {
           max-w-7xl
           mx-auto
         "
-      >
-
-        {/* =================================================
-            SECTION HEADER
-        ================================================== */}
+      >    
+            {/* SECTION HEADER */}
 
         <div className="mb-14">
 
@@ -112,7 +77,7 @@ export default function About() {
               About{" "}
               <span
                 className="
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-violet-600
                   to-cyan-500
                   bg-clip-text
@@ -139,11 +104,8 @@ export default function About() {
           </div>
 
         </div>
-
-
-        {/* =================================================
-            MAIN GRID
-        ================================================== */}
+     
+            {/* MAIN GRID */}
 
         <div
           className="
@@ -153,43 +115,29 @@ export default function About() {
           "
         >
 
-
-          {/* =================================================
-              EDUCATION CARD
-          ================================================== */}
+              {/* EDUCATION CARD */}
 
           <div
             className="
               lg:col-span-2
-
               group
-
               relative
               overflow-hidden
-
               rounded-3xl
-
               border
               border-violet-100
-
-              bg-gradient-to-br
+              bg-linear-to-br
               from-violet-50
               via-white
               to-cyan-50
-
               p-7
-
               shadow-xl
               shadow-violet-100/40
-
               hover:-translate-y-2
-
               transition-all
               duration-500
             "
           >
-
-            {/* Decorative circle */}
 
             <div
               className="
@@ -206,90 +154,57 @@ export default function About() {
               "
             />
 
-
-            {/* Icon */}
-
             <div
               className="
                 relative
-
                 w-14
                 h-14
-
                 rounded-2xl
-
-                bg-gradient-to-br
+                bg-linear-to-br
                 from-violet-600
                 to-purple-500
-
                 text-white
-
                 flex
                 items-center
                 justify-center
-
                 shadow-lg
                 shadow-violet-500/20
               "
             >
-
               <FaUserGraduate size={24} />
-
             </div>
-
-
-            {/* Label */}
 
             <p
               className="
                 relative
-
                 mt-8
-
                 text-xs
-
                 font-mono
-
                 tracking-[0.2em]
-
                 uppercase
-
                 text-violet-600
               "
             >
               Education
             </p>
 
-
-            {/* Degree */}
-
             <h3
               className="
                 relative
-
                 mt-2
-
                 text-2xl
-
                 font-bold
-
                 text-gray-900
               "
             >
               B.Sc. Computer Science
             </h3>
 
-
-            {/* College */}
-
             <p
               className="
                 relative
-
                 mt-3
-
                 text-gray-600
-
                 leading-relaxed
               "
             >
@@ -297,40 +212,27 @@ export default function About() {
               Commerce, Shivajinagar, Pune
             </p>
 
-
-            {/* Bottom Information */}
-
             <div
               className="
                 relative
-
                 mt-8
-
                 pt-6
-
                 border-t
                 border-violet-100
-
                 flex
                 flex-wrap
                 gap-3
               "
             >
 
-              {/* CGPA */}
-
               <div
                 className="
                   px-4
                   py-2
-
                   rounded-xl
-
                   bg-white
-
                   border
                   border-gray-100
-
                   shadow-sm
                 "
               >
@@ -345,21 +247,14 @@ export default function About() {
 
               </div>
 
-
-              {/* Duration */}
-
               <div
                 className="
                   px-4
                   py-2
-
                   rounded-xl
-
                   bg-white
-
                   border
                   border-gray-100
-
                   shadow-sm
                 "
               >
@@ -367,36 +262,26 @@ export default function About() {
                 <p className="text-[10px] text-gray-400 uppercase">
                   Duration
                 </p>
-
                 <p className="font-bold text-gray-900">
                   2023 — 2026
                 </p>
-
               </div>
 
             </div>
 
           </div>
 
-
-          {/* =================================================
-              ABOUT CONTENT
-          ================================================== */}
+              {/* ABOUT CONTENT */}
 
           <div
             className="
               lg:col-span-3
-
               rounded-3xl
-
               border
               border-gray-100
-
               bg-white
-
               p-7
               md:p-9
-
               shadow-xl
               shadow-gray-200/50
             "
@@ -425,13 +310,9 @@ export default function About() {
                   className="
                     w-11
                     h-11
-
                     rounded-xl
-
                     bg-cyan-50
-
                     text-cyan-600
-
                     flex
                     items-center
                     justify-center
@@ -470,13 +351,9 @@ export default function About() {
             <div
               className="
                 mt-8
-
                 space-y-5
-
                 text-gray-600
-
                 leading-8
-
                 text-sm
                 md:text-base
               "
@@ -518,25 +395,16 @@ export default function About() {
 
             </div>
 
-
-            {/* =================================================
-                QUICK STATS
-            ================================================== */}
-
+                {/* QUICK STATS */}
             <div
               className="
                 mt-8
-
                 grid
                 grid-cols-2
                 sm:grid-cols-4
-
                 gap-3
               "
             >
-
-              {/* Stat 1 */}
-
               <div
                 className="
                   rounded-2xl
@@ -546,7 +414,6 @@ export default function About() {
                   transition
                 "
               >
-
                 <p
                   className="
                     text-2xl
@@ -563,9 +430,6 @@ export default function About() {
 
               </div>
 
-
-              {/* Stat 2 */}
-
               <div
                 className="
                   rounded-2xl
@@ -575,7 +439,6 @@ export default function About() {
                   transition
                 "
               >
-
                 <p
                   className="
                     text-2xl
@@ -592,9 +455,6 @@ export default function About() {
 
               </div>
 
-
-              {/* Stat 3 */}
-
               <div
                 className="
                   rounded-2xl
@@ -604,7 +464,6 @@ export default function About() {
                   transition
                 "
               >
-
                 <p
                   className="
                     text-2xl
@@ -621,9 +480,6 @@ export default function About() {
 
               </div>
 
-
-              {/* Stat 4 */}
-
               <div
                 className="
                   rounded-2xl
@@ -633,7 +489,6 @@ export default function About() {
                   transition
                 "
               >
-
                 <div
                   className="
                     flex
@@ -641,11 +496,9 @@ export default function About() {
                     gap-2
                   "
                 >
-
                   <FaMapMarkerAlt
                     className="text-orange-500"
                   />
-
                   <p
                     className="
                       text-lg

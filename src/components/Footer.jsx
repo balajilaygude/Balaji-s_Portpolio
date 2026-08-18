@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="relative bg-[#08080b] text-white overflow-hidden">
 
       {/* Top gradient line */}
-      <div className="h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+      <div className="h-px bg-linear-to-r from-transparent via-violet-500 to-transparent" />
 
       <div
         className="
@@ -80,7 +80,7 @@ export default function Footer() {
               text-gray-500
               font-mono
               order-last
-              md:order-none
+              md:order-0
             "
           >
             © {new Date().getFullYear()} · Built with React & Tailwind

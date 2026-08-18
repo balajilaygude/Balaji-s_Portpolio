@@ -24,7 +24,7 @@ export default function Navbar() {
           max-w-6xl
           mx-auto
           relative
-          rounded-2xl
+          rounded-xl
           border border-white/20
           bg-white/70
           backdrop-blur-xl
@@ -57,8 +57,8 @@ export default function Navbar() {
                 w-10
                 h-10
                 rounded-xl
-                bg-gradient-to-br
-                from-violet-600
+                bg-linear-to-br
+                from-blue-500
                 to-cyan-500
                 flex
                 items-center
@@ -123,9 +123,9 @@ export default function Navbar() {
                     bottom-1
                     left-4
                     right-4
-                    h-[2px]
+                    h-0.5
                     rounded-full
-                    bg-gradient-to-r
+                    bg-linear-to-r
                     from-violet-500
                     to-cyan-400
                     scale-x-0
@@ -211,7 +211,7 @@ export default function Navbar() {
             ease-out
             ${
               open
-                ? "max-h-[420px] opacity-100"
+                ? "max-h-105 opacity-100"
                 : "max-h-0 opacity-0"
             }
           `}
@@ -299,7 +299,7 @@ export default function Navbar() {
                   w-full
                   py-3
                   rounded-lg
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-violet-600
                   to-cyan-500
                   text-white

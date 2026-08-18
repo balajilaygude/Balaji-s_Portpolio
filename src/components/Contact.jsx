@@ -17,47 +17,11 @@ export default function Contact() {
         px-6
         md:px-12
         lg:px-20
-        py-24
+        py-16
         bg-white
       "
     >
-
-      {/* =====================================================
-          BACKGROUND GLOW
-      ====================================================== */}
-
-      <div
-        className="
-          absolute
-          top-10
-          left-1/4
-          w-[350px]
-          h-[350px]
-          rounded-full
-          bg-violet-200/30
-          blur-[120px]
-          pointer-events-none
-        "
-      />
-
-      <div
-        className="
-          absolute
-          bottom-0
-          right-0
-          w-[300px]
-          h-[300px]
-          rounded-full
-          bg-cyan-200/20
-          blur-[120px]
-          pointer-events-none
-        "
-      />
-
-
-      {/* =====================================================
-          CONTAINER
-      ====================================================== */}
+          {/* CONTAINER */}
 
       <div
         className="
@@ -68,46 +32,8 @@ export default function Contact() {
         "
       >
 
-        {/* =================================================
-            HEADER
-        ================================================== */}
-
+            {/* HEADER */}
         <div className="mb-12">
-
-          <div
-            className="
-              flex
-              items-center
-              gap-2
-              mb-4
-            "
-          >
-
-            <span
-              className="
-                w-2
-                h-2
-                rounded-full
-                bg-green-500
-                animate-pulse
-              "
-            />
-
-            <p
-              className="
-                text-xs
-                font-mono
-                tracking-[0.25em]
-                uppercase
-                text-gray-500
-              "
-            >
-              05 / Contact
-            </p>
-
-          </div>
-
-
           <h2
             className="
               text-4xl
@@ -121,7 +47,7 @@ export default function Contact() {
 
             <span
               className="
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-violet-600
                 via-purple-500
                 to-cyan-500
@@ -131,10 +57,7 @@ export default function Contact() {
             >
               connect.
             </span>
-
           </h2>
-
-
           <p
             className="
               mt-5
@@ -151,10 +74,7 @@ export default function Contact() {
 
         </div>
 
-
-        {/* =================================================
-            CONTACT GRID
-        ================================================== */}
+            {/* CONTACT GRID */}
 
         <div
           className="
@@ -164,31 +84,20 @@ export default function Contact() {
           "
         >
 
-
-          {/* =================================================
-              TERMINAL
-          ================================================== */}
+              {/* TERMINAL */}
 
           <div
             className="
               lg:col-span-3
-
               rounded-3xl
-
               overflow-hidden
-
               bg-[#08080b]
-
               border
               border-gray-800
-
               shadow-2xl
               shadow-gray-300/40
-
               font-mono
-
               hover:shadow-violet-200/40
-
               transition-shadow
               duration-500
             "
@@ -201,10 +110,8 @@ export default function Contact() {
                 flex
                 items-center
                 justify-between
-
                 px-5
                 py-4
-
                 border-b
                 border-white/10
               "
@@ -238,30 +145,23 @@ export default function Contact() {
                     bg-green-500
                   "
                 />
-
               </div>
-
 
               <div
                 className="
                   flex
                   items-center
                   gap-2
-
                   text-xs
                   text-gray-500
                 "
               >
-
                 <Terminal size={13} />
-
                 contact.sh
-
               </div>
 
             </div>
-
-
+            
             {/* Terminal Content */}
 
             <div
@@ -271,10 +171,7 @@ export default function Contact() {
               "
             >
 
-              {/* Whoami */}
-
               <div>
-
                 <p className="text-gray-500 text-xs md:text-sm">
                   <span className="text-green-400">
                     balaji@portfolio
@@ -310,9 +207,6 @@ export default function Contact() {
 
               </div>
 
-
-              {/* Divider */}
-
               <div
                 className="
                   my-8
@@ -325,41 +219,28 @@ export default function Contact() {
               {/* Connect */}
 
               <p className="text-gray-500 text-xs md:text-sm">
-
                 <span className="text-green-400">
                   balaji@portfolio
                 </span>
                 :~$ connect
-
               </p>
 
-
               {/* Contact Links */}
-
               <div className="mt-6 space-y-3">
-
-
-                {/* Email */}
 
                 <a
                   href="mailto:balajiwork05@gmail.com"
                   className="
                     group
-
                     flex
                     items-center
                     gap-4
-
                     p-3
-
                     rounded-xl
-
                     border
                     border-transparent
-
                     hover:border-white/10
-                    hover:bg-white/[0.04]
-
+                    hover:bg-white/0.4
                     transition-all
                     duration-300
                   "
@@ -370,13 +251,9 @@ export default function Contact() {
                       w-9
                       h-9
                       shrink-0
-
                       rounded-lg
-
                       bg-red-500/10
-
                       text-red-400
-
                       flex
                       items-center
                       justify-center
@@ -384,10 +261,7 @@ export default function Contact() {
                   >
                     <Mail size={17} />
                   </div>
-
-
                   <div className="min-w-0">
-
                     <p
                       className="
                         text-[10px]
@@ -398,7 +272,6 @@ export default function Contact() {
                     >
                       Email
                     </p>
-
                     <p
                       className="
                         text-sm
@@ -426,11 +299,7 @@ export default function Contact() {
                       transition-all
                     "
                   />
-
                 </a>
-
-
-                {/* LinkedIn */}
 
                 <a
                   href="https://www.linkedin.com/in/balajilaygude"
@@ -438,38 +307,27 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="
                     group
-
                     flex
                     items-center
                     gap-4
-
                     p-3
-
                     rounded-xl
-
                     border
                     border-transparent
-
                     hover:border-white/10
-                    hover:bg-white/[0.04]
-
+                    hover:bg-white/0.4
                     transition-all
                     duration-300
                   "
                 >
-
                   <div
                     className="
                       w-9
                       h-9
                       shrink-0
-
                       rounded-lg
-
                       bg-blue-500/10
-
                       text-blue-400
-
                       flex
                       items-center
                       justify-center
@@ -477,10 +335,7 @@ export default function Contact() {
                   >
                     <Linkedin size={17} />
                   </div>
-
-
                   <div>
-
                     <p
                       className="
                         text-[10px]
@@ -520,30 +375,21 @@ export default function Contact() {
 
                 </a>
 
-
-                {/* GitHub */}
-
                 <a
                   href="https://github.com/balajilaygude"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
                     group
-
                     flex
                     items-center
                     gap-4
-
                     p-3
-
                     rounded-xl
-
                     border
                     border-transparent
-
                     hover:border-white/10
-                    hover:bg-white/[0.04]
-
+                    hover:bg-white/0.4
                     transition-all
                     duration-300
                   "
@@ -554,13 +400,9 @@ export default function Contact() {
                       w-9
                       h-9
                       shrink-0
-
                       rounded-lg
-
                       bg-purple-500/10
-
                       text-purple-400
-
                       flex
                       items-center
                       justify-center
@@ -568,10 +410,7 @@ export default function Contact() {
                   >
                     <Github size={17} />
                   </div>
-
-
                   <div>
-
                     <p
                       className="
                         text-[10px]
@@ -595,8 +434,6 @@ export default function Contact() {
                     </p>
 
                   </div>
-
-
                   <ArrowUpRight
                     size={16}
                     className="
@@ -608,14 +445,11 @@ export default function Contact() {
                       transition-all
                     "
                   />
-
                 </a>
 
               </div>
 
-
               {/* Bottom Terminal */}
-
               <div
                 className="
                   mt-8
@@ -625,14 +459,12 @@ export default function Contact() {
                   text-gray-500
                 "
               >
-
                 <span>
                   <span className="text-green-400">
                     balaji@portfolio
                   </span>
                   :~$
                 </span>
-
                 <span
                   className="
                     ml-2
@@ -642,93 +474,48 @@ export default function Contact() {
                     animate-pulse
                   "
                 />
-
               </div>
 
             </div>
 
           </div>
 
-
-          {/* =================================================
-              RIGHT CARD
-          ================================================== */}
+              {/* RIGHT CARD */}
 
           <div
             className="
               lg:col-span-2
-
               relative
               overflow-hidden
-
               rounded-3xl
-
-              bg-gradient-to-br
+              bg-linear-to-br
               from-violet-600
               via-purple-600
               to-cyan-500
-
               p-7
               md:p-9
-
               text-white
-
               shadow-xl
               shadow-violet-200/40
-
               flex
               flex-col
               justify-between
             "
           >
 
-            {/* Decorative Glow */}
-
-            <div
-              className="
-                absolute
-                -top-20
-                -right-20
-                w-60
-                h-60
-                rounded-full
-                bg-white/20
-                blur-3xl
-              "
-            />
-
-            <div
-              className="
-                absolute
-                -bottom-20
-                -left-20
-                w-60
-                h-60
-                rounded-full
-                bg-black/10
-                blur-3xl
-              "
-            />
-
-
             <div className="relative z-10">
 
               {/* Status */}
-
               <div
                 className="
                   inline-flex
                   items-center
                   gap-2
-
                   px-3
                   py-1.5
-
                   rounded-full
-
                   bg-white/15
                   backdrop-blur-md
-
                   border
                   border-white/20
                 "
@@ -755,17 +542,12 @@ export default function Contact() {
                 </span>
 
               </div>
-
-
               <h3
                 className="
                   mt-8
-
                   text-3xl
                   md:text-4xl
-
                   font-black
-
                   leading-tight
                 "
               >
