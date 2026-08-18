@@ -14,7 +14,8 @@ export default function Projects() {
         px-6
         md:px-12
         lg:px-20
-        py-24
+        pt-24
+        pb-10
         bg-white
       "
     > 
