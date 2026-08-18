@@ -168,8 +168,7 @@ return (
       px-6
       md:px-12
       lg:px-20
-      md:py-24
-      py-12
+      py-24
       bg-[#07070a]
       text-white
     "
