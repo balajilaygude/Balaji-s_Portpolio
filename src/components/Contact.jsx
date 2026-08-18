@@ -17,7 +17,7 @@ export default function Contact() {
         px-6
         md:px-12
         lg:px-20
-        py-16
+        py-24
         bg-white
       "
     >
