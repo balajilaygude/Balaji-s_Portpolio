@@ -13,10 +13,7 @@ export default function App() {
         min-h-screen
         overflow-x-hidden
         bg-white
-        text-gray-900
-        antialiased
-        selection:bg-violet-500
-        selection:text-white
+        text-black
         scroll-smooth
       "
     >
