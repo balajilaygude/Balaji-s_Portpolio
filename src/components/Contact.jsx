@@ -17,15 +17,13 @@ export default function Contact() {
         px-6
         md:px-12
         lg:px-20
-        py-24
+        pt-24 pb-10
         bg-white
       "
     >
-          {/* CONTAINER */}
 
       <div
         className="
-          relative
           z-10
           max-w-7xl
           mx-auto
@@ -33,7 +31,7 @@ export default function Contact() {
       >
 
             {/* HEADER */}
-        <div className="mb-12">
+        <div className="mb-5">
           <h2
             className="
               text-4xl
@@ -43,26 +41,15 @@ export default function Contact() {
               tracking-tight
             "
           >
-            Let's{" "}
-
-            <span
-              className="
-                bg-linear-to-r
-                from-violet-600
-                via-purple-500
-                to-cyan-500
-                bg-clip-text
-                text-transparent
-              "
-            >
+            Let's
               connect.
-            </span>
+
           </h2>
           <p
             className="
-              mt-5
+              mt-2
               max-w-xl
-              text-gray-500
+              text-black
               text-sm
               md:text-base
               leading-relaxed
@@ -74,13 +61,8 @@ export default function Contact() {
 
         </div>
 
-            {/* CONTACT GRID */}
-
         <div
           className="
-            grid
-            lg:grid-cols-5
-            gap-6
           "
         >
 
@@ -92,19 +74,9 @@ export default function Contact() {
               rounded-3xl
               overflow-hidden
               bg-[#08080b]
-              border
-              border-gray-800
-              shadow-2xl
-              shadow-gray-300/40
               font-mono
-              hover:shadow-violet-200/40
-              transition-shadow
-              duration-500
             "
           >
-
-            {/* Terminal Header */}
-
             <div
               className="
                 flex
@@ -113,7 +85,7 @@ export default function Contact() {
                 px-5
                 py-4
                 border-b
-                border-white/10
+                border-white
               "
             >
 
@@ -124,7 +96,7 @@ export default function Contact() {
                     w-3
                     h-3
                     rounded-full
-                    bg-red-500
+                    bg-white
                   "
                 />
 
@@ -133,7 +105,7 @@ export default function Contact() {
                     w-3
                     h-3
                     rounded-full
-                    bg-yellow-400
+                    bg-white
                   "
                 />
 
@@ -142,7 +114,7 @@ export default function Contact() {
                     w-3
                     h-3
                     rounded-full
-                    bg-green-500
+                    bg-white
                   "
                 />
               </div>
@@ -153,7 +125,7 @@ export default function Contact() {
                   items-center
                   gap-2
                   text-xs
-                  text-gray-500
+                  text-white
                 "
               >
                 <Terminal size={13} />
@@ -161,8 +133,6 @@ export default function Contact() {
               </div>
 
             </div>
-            
-            {/* Terminal Content */}
 
             <div
               className="
@@ -172,10 +142,8 @@ export default function Contact() {
             >
 
               <div>
-                <p className="text-gray-500 text-xs md:text-sm">
-                  <span className="text-green-400">
+                <p className="text-white text-xs md:text-sm">
                     balaji@portfolio
-                  </span>
                   :~$ whoami
                 </p>
 
@@ -197,7 +165,7 @@ export default function Contact() {
                     className="
                       mt-2
                       text-sm
-                      text-gray-500
+                      text-white/80
                     "
                   >
                     Full Stack MERN Developer
@@ -209,19 +177,17 @@ export default function Contact() {
 
               <div
                 className="
-                  my-8
+                  my-6 
                   h-px
-                  bg-white/10
+                  bg-white
                 "
               />
 
 
               {/* Connect */}
 
-              <p className="text-gray-500 text-xs md:text-sm">
-                <span className="text-green-400">
+              <p className="text-white text-xs md:text-sm">
                   balaji@portfolio
-                </span>
                 :~$ connect
               </p>
 
@@ -231,18 +197,11 @@ export default function Contact() {
                 <a
                   href="mailto:balajiwork05@gmail.com"
                   className="
-                    group
                     flex
                     items-center
                     gap-4
                     p-3
                     rounded-xl
-                    border
-                    border-transparent
-                    hover:border-white/10
-                    hover:bg-white/0.4
-                    transition-all
-                    duration-300
                   "
                 >
 
@@ -250,10 +209,9 @@ export default function Contact() {
                     className="
                       w-9
                       h-9
-                      shrink-0
                       rounded-lg
-                      bg-red-500/10
-                      text-red-400
+                      bg-white
+                      text-black
                       flex
                       items-center
                       justify-center
@@ -267,7 +225,7 @@ export default function Contact() {
                         text-[10px]
                         uppercase
                         tracking-widest
-                        text-gray-600
+                        text-white
                       "
                     >
                       Email
@@ -275,59 +233,34 @@ export default function Contact() {
                     <p
                       className="
                         text-sm
-                        text-gray-300
-                        truncate
-                        group-hover:text-white
-                        transition
+                        text-white
+
                       "
                     >
                       balajiwork05@gmail.com
                     </p>
 
                   </div>
-
-
-                  <ArrowUpRight
-                    size={16}
-                    className="
-                      ml-auto
-                      shrink-0
-                      text-gray-600
-                      group-hover:text-white
-                      group-hover:translate-x-1
-                      group-hover:-translate-y-1
-                      transition-all
-                    "
-                  />
                 </a>
 
                 <a
                   href="https://www.linkedin.com/in/balajilaygude"
                   target="_blank"
-                  rel="noopener noreferrer"
                   className="
-                    group
                     flex
                     items-center
                     gap-4
                     p-3
                     rounded-xl
-                    border
-                    border-transparent
-                    hover:border-white/10
-                    hover:bg-white/0.4
-                    transition-all
-                    duration-300
                   "
                 >
                   <div
                     className="
                       w-9
                       h-9
-                      shrink-0
                       rounded-lg
-                      bg-blue-500/10
-                      text-blue-400
+                      bg-white
+                      text-black
                       flex
                       items-center
                       justify-center
@@ -341,7 +274,7 @@ export default function Contact() {
                         text-[10px]
                         uppercase
                         tracking-widest
-                        text-gray-600
+                        text-white
                       "
                     >
                       LinkedIn
@@ -350,9 +283,8 @@ export default function Contact() {
                     <p
                       className="
                         text-sm
-                        text-gray-300
-                        group-hover:text-white
-                        transition
+                        text-white
+                        
                       "
                     >
                       /balajilaygude
@@ -360,38 +292,17 @@ export default function Contact() {
 
                   </div>
 
-
-                  <ArrowUpRight
-                    size={16}
-                    className="
-                      ml-auto
-                      text-gray-600
-                      group-hover:text-white
-                      group-hover:translate-x-1
-                      group-hover:-translate-y-1
-                      transition-all
-                    "
-                  />
-
                 </a>
 
                 <a
                   href="https://github.com/balajilaygude"
                   target="_blank"
-                  rel="noopener noreferrer"
                   className="
-                    group
                     flex
                     items-center
                     gap-4
                     p-3
                     rounded-xl
-                    border
-                    border-transparent
-                    hover:border-white/10
-                    hover:bg-white/0.4
-                    transition-all
-                    duration-300
                   "
                 >
 
@@ -399,10 +310,9 @@ export default function Contact() {
                     className="
                       w-9
                       h-9
-                      shrink-0
                       rounded-lg
-                      bg-purple-500/10
-                      text-purple-400
+                      bg-white
+                      text-black
                       flex
                       items-center
                       justify-center
@@ -416,7 +326,7 @@ export default function Contact() {
                         text-[10px]
                         uppercase
                         tracking-widest
-                        text-gray-600
+                        text-white
                       "
                     >
                       GitHub
@@ -425,52 +335,33 @@ export default function Contact() {
                     <p
                       className="
                         text-sm
-                        text-gray-300
-                        group-hover:text-white
-                        transition
+                        text-white
                       "
                     >
                       /balajilaygude
                     </p>
 
                   </div>
-                  <ArrowUpRight
-                    size={16}
-                    className="
-                      ml-auto
-                      text-gray-600
-                      group-hover:text-white
-                      group-hover:translate-x-1
-                      group-hover:-translate-y-1
-                      transition-all
-                    "
-                  />
                 </a>
 
               </div>
-
-              {/* Bottom Terminal */}
               <div
                 className="
-                  mt-8
+                  mt-6
                   flex
                   items-center
                   text-xs
-                  text-gray-500
+                  text-white
                 "
               >
-                <span>
-                  <span className="text-green-400">
                     balaji@portfolio
-                  </span>
                   :~$
-                </span>
                 <span
                   className="
                     ml-2
                     w-2
                     h-4
-                    bg-green-400
+                    bg-white
                     animate-pulse
                   "
                 />
@@ -480,129 +371,7 @@ export default function Contact() {
 
           </div>
 
-              {/* RIGHT CARD */}
 
-          <div
-            className="
-              lg:col-span-2
-              relative
-              overflow-hidden
-              rounded-3xl
-              bg-linear-to-br
-              from-violet-600
-              via-purple-600
-              to-cyan-500
-              p-7
-              md:p-9
-              text-white
-              shadow-xl
-              shadow-violet-200/40
-              flex
-              flex-col
-              justify-between
-            "
-          >
-
-            <div className="relative z-10">
-
-              {/* Status */}
-              <div
-                className="
-                  inline-flex
-                  items-center
-                  gap-2
-                  px-3
-                  py-1.5
-                  rounded-full
-                  bg-white/15
-                  backdrop-blur-md
-                  border
-                  border-white/20
-                "
-              >
-
-                <span
-                  className="
-                    w-2
-                    h-2
-                    rounded-full
-                    bg-green-300
-                    animate-pulse
-                  "
-                />
-
-                <span
-                  className="
-                    text-[10px]
-                    font-mono
-                    tracking-wider
-                  "
-                >
-                  AVAILABLE FOR OPPORTUNITIES
-                </span>
-
-              </div>
-              <h3
-                className="
-                  mt-8
-                  text-3xl
-                  md:text-4xl
-                  font-black
-                  leading-tight
-                "
-              >
-                Let's build
-                something
-                <span className="block text-cyan-200">
-                  awesome.
-                </span>
-              </h3>
-
-
-              <p
-                className="
-                  mt-5
-                  text-sm
-                  text-white/75
-                  leading-relaxed
-                  max-w-sm
-                "
-              >
-                I'm always interested in working on
-                interesting products, collaborating with
-                developers, and learning something new.
-              </p>
-
-            </div>
-
-
-            {/* Location */}
-
-            <div
-              className="
-                relative
-                z-10
-
-                mt-12
-
-                flex
-                items-center
-                gap-3
-
-                text-sm
-                text-white/80
-              "
-            >
-
-              <MapPin size={18} />
-
-              <span>
-                Pune, Maharashtra, India
-              </span>
-
-            </div>
-
-          </div>
 
         </div>
 
