@@ -19,27 +19,8 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 pt-4">
-      <div
-        className="
-          max-w-6xl
-          mx-auto
-          relative
-          rounded-xl
-          border border-white/20
-          bg-white/70
-          backdrop-blur-xl
-          shadow-lg shadow-black/5
-        "
-      >
-        <div
-          className="
-            h-16
-            px-4 md:px-6
-            flex
-            items-center
-            justify-between
-          "
-        >
+      <div className=" max-w-6xl mx-auto relative rounded-xl border border-black  bg-white/70 backdrop-blur-xl shadow-lg shadow-black/5 ">
+        <div className=" h-16 px-4 md:px-6 flex items-center justify-between" F>
           <a
             href="#home"
             onClick={closeMenu}
@@ -47,16 +28,16 @@ export default function Navbar() {
           >
             <div
               className="
-                w-10
-                h-10
-                rounded-xl
-                bg-black
-                flex
-                items-center
-                justify-center
-                text-white
-                font-bold
-                text-sm
+   w-10
+   h-10
+   rounded-xl
+    bg-black
+   flex
+   items-center
+   justify-center
+    text-white
+   font-bold
+   text-sm
               "
             >
               BL
@@ -68,11 +49,11 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className="
-                  relative
-                  px-4
-                  py-2
-                  text-sm
-                  font-medium
+     relative
+     px-4
+     py-2
+     text-sm
+     font-medium
                 "
               >
                 {link.name}
@@ -80,48 +61,42 @@ export default function Navbar() {
             ))}
           </div>
 
-
           <button
             type="button"
             onClick={() => setOpen(!open)}
             className="
-              md:hidden
-              w-10
-              h-10
-              rounded-xl
-              bg-gray-950
-              text-white
-              flex
-              items-center
-              justify-center
+ md:hidden
+ w-10
+ h-10
+ rounded-xl
+  bg-gray-950
+  text-white
+ flex
+ items-center
+ justify-center
             "
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
         <div
-          className={`
-            md:hidden
-            overflow-hidden
-            transition-all
-            duration-300
-            ease-out
+          className={` md:hidden overflow-hidden transition-all duration-300 ease-out
             ${open ? "max-h-105 opacity-100" : "max-h-0 opacity-0"}
           `}
         >
           <div
             className="
-              px-4
-              pb-4
-              pt-2
+ px-4
+ pb-4
+ pt-2
             "
           >
             <div
               className="
-                rounded-xl
-                bg-black
-                p-3
-                shadow-xl
+   rounded-xl
+    bg-black
+   p-3
+   shadow-xl
               "
             >
               <div className="space-y-1">
@@ -131,13 +106,13 @@ export default function Navbar() {
                     href={link.href}
                     onClick={closeMenu}
                     className="
-                      flex
-                      items-center
-                      justify-between
-                      px-4
-                      py-3
-                      rounded-lg
-                      text-white
+         flex
+         items-center
+         justify-between
+         px-4
+         py-3
+         rounded-lg
+          text-white
                     "
                   >
                     <div className="flex items-center gap-3">

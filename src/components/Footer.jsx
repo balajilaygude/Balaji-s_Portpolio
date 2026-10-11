@@ -8,11 +8,11 @@ export default function Footer() {
                 Balaji Laygude
               </p>
 
-              <p className="text-xs text-gray-500 font-mono">
+              <p className="text-xs text-white font-mono">
                 Full Stack MERN Developer
               </p>
             </div>
-          <p className=" text-xs  text-gray-500 font-mono order-last md:order-0" >
+          <p className=" text-xs  text-white font-mono order-last md:order-0" >
             © {new Date().getFullYear()} · Built with React & Tailwind
           </p>
       </div>
