@@ -22,51 +22,6 @@ import {
 
 const skills = [
   {
-    name: "React.js",
-    icon: <FaReact />,
-    color: "text-cyan-400",
-    bg: "bg-cyan-400/10",
-    border: "border-cyan-400/20",
-    glow: "hover:shadow-cyan-500/30",
-    category: "Frontend",
-  },
-  {
-    name: "JavaScript",
-    icon: <SiJavascript />,
-    color: "text-yellow-400",
-    bg: "bg-yellow-400/10",
-    border: "border-yellow-400/20",
-    glow: "hover:shadow-yellow-500/30",
-    category: "Language",
-  },
-  {
-    name: "Node.js",
-    icon: <FaNodeJs />,
-    color: "text-green-400",
-    bg: "bg-green-400/10",
-    border: "border-green-400/20",
-    glow: "hover:shadow-green-500/30",
-    category: "Backend",
-  },
-  {
-    name: "Express.js",
-    icon: <SiExpress />,
-    color: "text-gray-300",
-    bg: "bg-white/10",
-    border: "border-white/20",
-    glow: "hover:shadow-white/20",
-    category: "Backend",
-  },
-  {
-    name: "MongoDB",
-    icon: <SiMongodb />,
-    color: "text-green-400",
-    bg: "bg-green-400/10",
-    border: "border-green-400/20",
-    glow: "hover:shadow-green-500/30",
-    category: "Database",
-  },
-  {
     name: "Tailwind CSS",
     icon: <SiTailwindcss />,
     color: "text-cyan-400",
@@ -129,15 +84,7 @@ const skills = [
     glow: "hover:shadow-blue-500/30",
     category: "DevOps",
   },
-  {
-    name: "GitHub Actions",
-    icon: <SiGithubactions />,
-    color: "text-blue-400",
-    bg: "bg-blue-400/10",
-    border: "border-blue-400/20",
-    glow: "hover:shadow-blue-500/30",
-    category: "DevOps",
-  },
+
   {
     name: "Postman",
     icon: <SiPostman />,
@@ -146,15 +93,6 @@ const skills = [
     border: "border-orange-400/20",
     glow: "hover:shadow-orange-500/30",
     category: "API",
-  },
-  {
-    name: "Linux",
-    icon: <FaLinux />,
-    color: "text-yellow-300",
-    bg: "bg-yellow-300/10",
-    border: "border-yellow-300/20",
-    glow: "hover:shadow-yellow-400/30",
-    category: "System",
   },
 ];
 
@@ -168,77 +106,16 @@ return (
       px-6
       md:px-12
       lg:px-20
-      py-24
+      pt-24
+      pb-10
       bg-[#07070a]
       text-white
     "
   >
 
-    {/* =====================================================
-        BACKGROUND
-    ====================================================== */}
-
-    <div
-      className="
-        absolute
-        top-0
-        left-1/2
-        -translate-x-1/2
-        w-125
-        h-125
-        rounded-full
-        bg-purple-600/10
-        blur-[140px]
-        pointer-events-none
-      "
-    />
-
-    <div
-      className="
-        absolute
-        bottom-0
-        left-0
-        w-87.5
-        h-87.5
-        rounded-full
-        bg-cyan-500/10
-        blur-[130px]
-        pointer-events-none
-      "
-    />
-
-    <div
-      className="
-        absolute
-        top-1/2
-        right-0
-        w-75
-        h-75
-        rounded-full
-        bg-pink-500/5
-        blur-[120px]
-        pointer-events-none
-      "
-    />
-
-
-    {/* Subtle Grid */}
-
-    <div
-      className="
-        absolute
-        inset-0
-        opacity-[0.025]
-        pointer-events-none
-        bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)]
-        bg-size-[50px_50px]
-      "
-    />
-        {/* MAIN CONTAINER */}
-
     <div className="relative z-10 max-w-7xl mx-auto">
-          {/* HEADER */}
-      <div className="text-center mb-16">
+  
+      <div className="text-center mb-8">
 
         <div
           className="
@@ -249,10 +126,8 @@ return (
             py-2
             rounded-full
             border
-            border-white/10
-            bg-white/4
-            backdrop-blur-md
-            mb-6
+            border-white
+            mb-2
           "
         >
 
@@ -261,10 +136,7 @@ return (
               w-2
               h-2
               rounded-full
-              bg-cyan-400
-              shadow
-              shadow-cyan-400
-              animate-pulse
+              bg-white
             "
           />
 
@@ -274,7 +146,8 @@ return (
               font-mono
               tracking-[0.2em]
               uppercase
-              text-gray-400
+              text-white
+            
             "
           >
            Skills
@@ -290,23 +163,12 @@ return (
             lg:text-6xl
             font-black
             tracking-tight
+          
           "
         >
 
-          My{" "}
-
-          <span
-            className="
-              bg-linear-to-r
-              from-cyan-400
-              via-purple-400
-              to-pink-400
-              bg-clip-text
-              text-transparent
-            "
-          >
+          My
             Tech Stack
-          </span>
 
         </h2>
 
@@ -318,7 +180,7 @@ return (
             mt-5
             text-sm
             md:text-base
-            text-gray-500
+            text-white/80
             leading-relaxed
           "
         >
@@ -328,58 +190,20 @@ return (
 
       </div>
 
-          {/* MERN FEATURED STACK */}
       <div
         className="
           relative
           max-w-5xl
           mx-auto
-          mb-16
+          mb-10
           rounded-4xl
           border
-          border-white/10
-          bg-white/[0.035]
-          backdrop-blur-xl
+          border-white
           overflow-hidden
-          shadow-2xl
-          shadow-purple-950/20
+
         "
       >
 
-        {/* Top gradient line */}
-
-        <div
-          className="
-            absolute
-            top-0
-            left-0
-            right-0
-            h-0.5
-            bg-linear-to-r
-            from-cyan-400
-            via-purple-500
-            to-green-400
-          "
-        />
-
-
-        {/* Background Glow */}
-
-        <div
-          className="
-            absolute
-            top-1/2
-            left-1/2
-            -translate-x-1/2
-            -translate-y-1/2
-            w-96
-            h-96
-            rounded-full
-            bg-purple-500/10
-            blur-[100px]
-            pointer-events-none
-          "
-        />
 
 
         <div
@@ -390,8 +214,6 @@ return (
           "
         >
 
-          {/* Featured Header */}
-
           <div
             className="
               flex
@@ -399,8 +221,8 @@ return (
               md:flex-row
               md:items-center
               md:justify-between
-              gap-5
-              mb-10
+              gap-2
+              mb-5
             "
           >
 
@@ -411,7 +233,7 @@ return (
                   flex
                   items-center
                   gap-2
-                  mb-3
+                
                 "
               >
 
@@ -421,31 +243,13 @@ return (
                     font-mono
                     uppercase
                     tracking-[0.2em]
-                    text-gray-500
+                    text-white/80
                   "
                 >
                   Primary Stack
                 </span>
 
-                <span
-                  className="
-                    px-2
-                    py-1
-                    rounded-full
-                    bg-green-400/10
-                    border
-                    border-green-400/20
-                    text-[9px]
-                    text-green-400
-                    font-mono
-                  "
-                >
-                  MAIN
-                </span>
-
               </div>
-
-
               <h3
                 className="
                   text-3xl
@@ -463,8 +267,7 @@ return (
               className="
                 max-w-xs
                 text-xs
-                text-gray-500
-                leading-relaxed
+                text-white/80
                 md:text-right
               "
             >
@@ -473,9 +276,6 @@ return (
             </p>
 
           </div>
-
-
-          {/* MERN Technologies */}
 
           <div
             className="
@@ -490,55 +290,29 @@ return (
 
             <div
               className="
-                group
-                relative
+                
                 rounded-2xl
-                border
-                border-cyan-400/10
-                bg-cyan-400/4
-                p-5
+                bg-white
+                text-black
+                p-5 flex justify-center items-center flex-col
                 overflow-hidden
-                hover:bg-cyan-400/8
-                hover:border-cyan-400/30
-                hover:-translate-y-1
-                transition-all
-                duration-300
               "
             >
 
               <FaReact
                 className="
                   text-4xl
-                  text-cyan-400
-                  group-hover:scale-110
-                  group-hover:rotate-6
-                  transition-all
-                  duration-300
+                  text-black
                 "
               />
 
-              <p className="mt-5 font-semibold">
+              <p className="mt-3 font-semibold">
                 React
               </p>
 
-              <p className="text-[11px] text-gray-500 mt-1">
+              <p className="text-[11px]  mt-1">
                 Frontend
               </p>
-
-              <div
-                className="
-                  absolute
-                  -right-8
-                  -bottom-8
-                  w-20
-                  h-20
-                  rounded-full
-                  bg-cyan-400/10
-                  blur-2xl
-                  group-hover:bg-cyan-400/20
-                  transition
-                "
-              />
 
             </div>
 
@@ -547,79 +321,55 @@ return (
 
             <div
               className="
-                group
-                relative
+               
                 rounded-2xl
-                border
-                border-green-400/10
-                bg-green-400/4
-                p-5
+                bg-white
+                text-black
+                p-5 flex justify-center items-center flex-col
                 overflow-hidden
-                hover:bg-green-400/8
-                hover:border-green-400/30
-                hover:-translate-y-1
-                transition-all
-                duration-300
               "
             >
 
               <FaNodeJs
                 className="
                   text-4xl
-                  text-green-400
-                  group-hover:scale-110
-                  group-hover:rotate-6
-                  transition-all
-                  duration-300
+                  text-black 
                 "
               />
 
-              <p className="mt-5 font-semibold">
+              <p className="mt-3  font-semibold">
                 Node.js
               </p>
 
-              <p className="text-[11px] text-gray-500 mt-1">
+              <p className="text-[11px]  mt-1">
                 Runtime
               </p>
 
             </div>
 
-
-            {/* Express */}
-
             <div
               className="
-                group
-                relative
+                 
                 rounded-2xl
-                border
-                border-white/10
-                bg-white/3
-                p-5
+                bg-white
+                text-black
+                p-5 flex justify-center items-center flex-col
                 overflow-hidden
-                hover:bg-white/[0.07]
-                hover:border-white/25
-                hover:-translate-y-1
-                transition-all
-                duration-300
               "
             >
 
               <SiExpress
                 className="
                   text-4xl
-                  text-white
-                  group-hover:scale-110
-                  transition-all
-                  duration-300
+                  text-black
                 "
               />
 
-              <p className="mt-5 font-semibold">
+              <p className="mt-3 font-semibold">
                 Express
               </p>
 
-              <p className="text-[11px] text-gray-500 mt-1">
+              <p className="text-[11px] mt-1">
                 Backend
               </p>
 
@@ -629,31 +379,19 @@ return (
             {/* MongoDB */}
 
             <div
-              className="
-                group
-                relative
+              className="               
                 rounded-2xl
-                border
-                border-green-400/10
-                bg-green-400/4
-                p-5
+                bg-white
+                text-black
+                p-5 flex justify-center items-center flex-col
                 overflow-hidden
-                hover:bg-green-400/8
-                hover:border-green-400/30
-                hover:-translate-y-1
-                transition-all
-                duration-300
               "
             >
 
               <SiMongodb
                 className="
                   text-4xl
-                  text-green-400
-                  group-hover:scale-110
-                  group-hover:rotate-6
-                  transition-all
-                  duration-300
+                  text-black
                 "
               />
 
@@ -661,7 +399,7 @@ return (
                 MongoDB
               </p>
 
-              <p className="text-[11px] text-gray-500 mt-1">
+              <p className="text-[11px] mt-1">
                 Database
               </p>
 
@@ -673,8 +411,6 @@ return (
 
       </div>
 
-          {/* OTHER SKILLS HEADER */}
-
       <div
         className="
           flex
@@ -684,19 +420,6 @@ return (
         "
       >
 
-        <div>
-
-          <p
-            className="
-              text-[10px]
-              font-mono
-              tracking-[0.2em]
-              uppercase
-              text-gray-600
-            "
-          >
-            Beyond MERN
-          </p>
 
           <h3
             className="
@@ -708,16 +431,6 @@ return (
             Tools & Technologies
           </h3>
 
-        </div>
-
-
-        <div
-          className="
-            h-px
-            flex-1
-            bg-white/10
-          "
-        />
 
       </div>
 
@@ -739,30 +452,39 @@ return (
 
           <div
             key={skill.name}
-            className={`
-              group
-              relative
+            className="
               overflow-hidden
               rounded-2xl
-              border
-              ${skill.border}
-              ${skill.bg}
+              bg-white
+              text-black
               p-5
               min-h-38.75
               flex
               flex-col
-              justify-between
-              hover:-translate-y-2
-              hover:shadow-xl
-              ${skill.glow}
-              transition-all
-              duration-300
-            `}
+              justify-center gap-2
+              items-center
+            "
           >
-
-            {/* Top */}
-
             <div
+              className={`
+                text-4xl
+              `}
+
+            >
+              {skill.icon}
+            </div>
+
+              <p
+                className="
+                  font-semibold
+                  text-sm
+                  text-black
+                "
+              >
+                {skill.name}
+              </p>
+
+                        <div
               className="
                 flex
                 items-center
@@ -775,143 +497,20 @@ return (
                   text-[9px]
                   uppercase
                   tracking-[0.15em]
-                  text-gray-500
+                  text-black
                   font-mono
                 "
               >
                 {skill.category}
               </span>
 
-
-              <span
-                className="
-                  w-7
-                  h-7
-                  rounded-lg
-                  border
-                  border-white/10
-                  bg-white/5
-                  flex
-                  items-center
-                  justify-center
-                  text-gray-600
-                  group-hover:text-white
-                  group-hover:border-white/20
-                  transition
-                "
-              >
-                ↗
-              </span>
-
             </div>
 
-
-            {/* Icon */}
-
-            <div
-              className={`
-                text-4xl
-                ${skill.color}
-                group-hover:scale-110
-                group-hover:-rotate-3
-                origin-left
-                transition-all
-                duration-300
-              `}
-            >
-              {skill.icon}
-            </div>
-
-
-            {/* Name */}
-
-            <div>
-
-              <p
-                className="
-                  font-semibold
-                  text-sm
-                  text-gray-200
-                  group-hover:text-white
-                  transition
-                "
-              >
-                {skill.name}
-              </p>
-
-            </div>
-
-
-            {/* Hover Glow */}
-
-            <div
-              className="
-                absolute
-                -bottom-12
-                -right-12
-                w-28
-                h-28
-                rounded-full
-                bg-white/5
-                blur-3xl
-                group-hover:bg-white/10
-                transition-all
-                duration-500
-              "
-            />
           </div>
 
         ))}
 
       </div>
-          {/* BOTTOM */}
-
-      <div
-        className="
-          mt-16
-          flex
-          flex-col
-          sm:flex-row
-          items-center
-          justify-center
-          gap-3
-          text-center
-        "
-      >
-
-        <span
-          className="
-            text-green-400
-            font-mono
-            text-xs
-          "
-        >
-          {"<"}
-        </span>
-
-        <span
-          className="
-            text-xs
-            text-gray-500
-            font-mono
-            tracking-wider
-          "
-        >
-          constantly_learning
-        </span>
-
-        <span
-          className="
-            text-green-400
-            font-mono
-            text-xs
-          "
-        >
-          {"/>"}
-        </span>
-
-      </div>
-
     </div>
 
   </section>
