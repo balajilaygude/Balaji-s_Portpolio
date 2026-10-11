@@ -245,11 +245,9 @@ p-4 rounded-4xl
 
                           px-4
                           py-2.5
-
                           rounded-xl
                           bg-white
                           text-black
-
                           text-sm
                           font-medium
                         "
