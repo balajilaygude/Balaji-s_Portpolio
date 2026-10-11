@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 pt-4">
       <div className=" max-w-6xl mx-auto relative rounded-xl border border-black  bg-white/70 backdrop-blur-xl shadow-lg shadow-black/5 ">
-        <div className=" h-16 px-4 md:px-6 flex items-center justify-between" F>
+        <div className=" h-16 px-4 md:px-6 flex items-center justify-between" >
           <a
             href="#home"
             onClick={closeMenu}
