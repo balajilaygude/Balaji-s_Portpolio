@@ -19,16 +19,11 @@ export default function About() {
         px-6
         md:px-12
         lg:px-20
-        py-24
+        pt-24
+        pb-10
         bg-white
       "
     >
-
-
-      {/* =====================================================
-          CONTENT
-      ====================================================== */}
-
       <div
         className="
           relative
@@ -39,15 +34,13 @@ export default function About() {
       >    
             {/* SECTION HEADER */}
 
-        <div className="mb-14">
+        <div className="mb-8">
 
           <p
             className="
               text-sm
               font-mono
-              tracking-[0.25em]
               uppercase
-              text-violet-600
             "
           >
             Get to know me
@@ -74,39 +67,12 @@ export default function About() {
                 tracking-tight
               "
             >
-              About{" "}
-              <span
-                className="
-                  bg-linear-to-r
-                  from-violet-600
-                  to-cyan-500
-                  bg-clip-text
-                  text-transparent
-                "
-              >
+              About
                 Me
-              </span>
             </h2>
-
-            <p
-              className="
-                max-w-md
-                text-gray-500
-                text-sm
-                leading-relaxed
-              "
-            >
-              A developer who enjoys turning ideas into
-              useful, responsive and well-designed web
-              experiences.
-            </p>
-
           </div>
 
         </div>
-     
-            {/* MAIN GRID */}
-
         <div
           className="
             grid
@@ -114,9 +80,6 @@ export default function About() {
             gap-6
           "
         >
-
-              {/* EDUCATION CARD */}
-
           <div
             className="
               lg:col-span-2
@@ -125,17 +88,8 @@ export default function About() {
               overflow-hidden
               rounded-3xl
               border
-              border-violet-100
-              bg-linear-to-br
-              from-violet-50
-              via-white
-              to-cyan-50
+              border-black
               p-7
-              shadow-xl
-              shadow-violet-100/40
-              hover:-translate-y-2
-              transition-all
-              duration-500
             "
           >
 
@@ -147,10 +101,7 @@ export default function About() {
                 w-40
                 h-40
                 rounded-full
-                bg-violet-200/40
-                group-hover:scale-125
-                transition-transform
-                duration-700
+                bg-black
               "
             />
 
@@ -160,9 +111,7 @@ export default function About() {
                 w-14
                 h-14
                 rounded-2xl
-                bg-linear-to-br
-                from-violet-600
-                to-purple-500
+                bg-black
                 text-white
                 flex
                 items-center
@@ -182,7 +131,6 @@ export default function About() {
                 font-mono
                 tracking-[0.2em]
                 uppercase
-                text-violet-600
               "
             >
               Education
@@ -218,7 +166,7 @@ export default function About() {
                 mt-8
                 pt-6
                 border-t
-                border-violet-100
+                border-black
                 flex
                 flex-wrap
                 gap-3
@@ -230,18 +178,17 @@ export default function About() {
                   px-4
                   py-2
                   rounded-xl
-                  bg-white
-                  border
-                  border-gray-100
-                  shadow-sm
+                  bg-black
+                  text-white
+                  
                 "
               >
 
-                <p className="text-[10px] text-gray-400 uppercase">
+                <p className="text-[10px]  uppercase">
                   CGPA
                 </p>
 
-                <p className="font-bold text-gray-900">
+                <p className="font-bold ">
                   8.0
                 </p>
 
@@ -252,38 +199,35 @@ export default function About() {
                   px-4
                   py-2
                   rounded-xl
-                  bg-white
-                  border
-                  border-gray-100
-                  shadow-sm
+                  bg-black
+                  text-white
                 "
               >
 
-                <p className="text-[10px] text-gray-400 uppercase">
+                <p className="text-[10px]  uppercase">
                   Duration
                 </p>
-                <p className="font-bold text-gray-900">
+                <p className="font-bold ">
                   2023 — 2026
                 </p>
               </div>
 
+              
+
             </div>
 
           </div>
-
-              {/* ABOUT CONTENT */}
 
           <div
             className="
               lg:col-span-3
               rounded-3xl
               border
-              border-gray-100
+              border-black
               bg-white
               p-7
               md:p-9
-              shadow-xl
-              shadow-gray-200/50
+              
             "
           >
 
@@ -311,8 +255,8 @@ export default function About() {
                     w-11
                     h-11
                     rounded-xl
-                    bg-cyan-50
-                    text-cyan-600
+                    
+                    text-black
                     flex
                     items-center
                     justify-center
@@ -323,7 +267,7 @@ export default function About() {
 
                 <div>
 
-                  <p className="text-xs text-gray-400 uppercase tracking-wider">
+                  <p className="text-xs text-gray-700 uppercase tracking-wider">
                     Who I am
                   </p>
 
@@ -335,19 +279,7 @@ export default function About() {
 
               </div>
 
-
-              <ArrowUpRight
-                className="
-                  text-gray-300
-                "
-                size={22}
-              />
-
             </div>
-
-
-            {/* Description */}
-
             <div
               className="
                 mt-8
@@ -382,20 +314,9 @@ export default function About() {
                 how the complete application fits together.
               </p>
 
-              <p>
-                I'm continuously expanding my toolkit by
-                exploring{" "}
-                <span className="font-semibold text-violet-600">
-                  Docker, CI/CD, cloud deployment and
-                  TypeScript
-                </span>
-                , while focusing on writing better code
-                and building real-world projects.
-              </p>
 
             </div>
 
-                {/* QUICK STATS */}
             <div
               className="
                 mt-8
@@ -408,23 +329,22 @@ export default function About() {
               <div
                 className="
                   rounded-2xl
-                  bg-violet-50
+                  bg-black
+                  text-white
                   p-4
-                  hover:bg-violet-100
-                  transition
+                  
                 "
               >
                 <p
                   className="
                     text-2xl
                     font-black
-                    text-violet-600
                   "
                 >
                   BSc
                 </p>
 
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs  mt-1">
                   Computer Science
                 </p>
 
@@ -433,23 +353,23 @@ export default function About() {
               <div
                 className="
                   rounded-2xl
-                  bg-cyan-50
+                 
                   p-4
-                  hover:bg-cyan-100
-                  transition
+                 bg-black
+                  text-white
                 "
               >
                 <p
                   className="
                     text-2xl
                     font-black
-                    text-cyan-600
+                    
                   "
                 >
                   8.0
                 </p>
 
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs  mt-1">
                   CGPA
                 </p>
 
@@ -458,23 +378,23 @@ export default function About() {
               <div
                 className="
                   rounded-2xl
-                  bg-green-50
+                  bg-black
+                  text-white
                   p-4
-                  hover:bg-green-100
-                  transition
+                  
                 "
               >
                 <p
                   className="
                     text-2xl
                     font-black
-                    text-green-600
+                    
                   "
                 >
                   MERN
                 </p>
 
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs  mt-1">
                   Full Stack
                 </p>
 
@@ -483,10 +403,10 @@ export default function About() {
               <div
                 className="
                   rounded-2xl
-                  bg-orange-50
+                  bg-black
+                  text-white
                   p-4
-                  hover:bg-orange-100
-                  transition
+                  
                 "
               >
                 <div
@@ -497,13 +417,13 @@ export default function About() {
                   "
                 >
                   <FaMapMarkerAlt
-                    className="text-orange-500"
+                    className=""
                   />
                   <p
                     className="
                       text-lg
                       font-black
-                      text-orange-600
+                      
                     "
                   >
                     Pune
@@ -511,7 +431,7 @@ export default function About() {
 
                 </div>
 
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs  mt-1">
                   India
                 </p>
 
