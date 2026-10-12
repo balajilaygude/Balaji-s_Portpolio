@@ -17,10 +17,8 @@ export default function App() {
         scroll-smooth
       "
     >
-      {/* Navbar */}
       <Navbar />
 
-      {/* Main Portfolio */}
       <main>
         <Hero />
 
